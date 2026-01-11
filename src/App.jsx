@@ -74,7 +74,15 @@ const Home = () => (
       </h1>
       <div className="flex flex-wrap gap-4 justify-center md:justify-start">
         <Link to="/skills" className="bg-sky-600 px-8 py-4 rounded-xl font-bold text-white hover:bg-sky-500 transition shadow-xl shadow-sky-900/20">My Tech Stack</Link>
-        <a href="/saad-resume.pdf" download className="border border-white/10 px-8 py-4 rounded-xl font-bold text-white hover:bg-white/5 transition tracking-widest text-xs uppercase">Download Resume</a>
+        <a 
+  href={`${window.location.origin}/Saad_Abrar_Resume.pdf`} 
+  target="_blank" 
+  rel="noreferrer"
+  download="Saad_Abrar_Resume.pdf"
+  className="border border-white/10 px-8 py-4 rounded-xl font-bold text-white hover:bg-white/5 transition tracking-widest text-xs uppercase"
+>
+  Download Resume
+</a>
       </div>
     </div>
   </section>
